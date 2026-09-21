@@ -9,12 +9,12 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
 ## Running scripts
-1.  Run the enviroment script to setup dependencies
+1.  Run the enviroment script to setup dependencies necessary for both scripts
 ```
 conda env create -f environment.yml
 conda activate pds-tarea1
 ```
-2. Run script
+2. Running scripts example
 ```
 python3 vis-senal-alias.py
 ```
@@ -23,7 +23,12 @@ python3 vis-senal-alias.py
 conda deactivate
 ```
 
-### Script Options
+### Script: vis-senal-alias
+Run the script with
+```
+python3 vis-senal-alias.py
+```
+
 On launching the script the user will be presented with options for creating
 the sine waves
 ```
@@ -52,6 +57,16 @@ input, default value are used**.
 5) Exit
 ```
 Use option 5 to exit
+
+### Script: alias-mod-signal
+Run the script with
+```
+python3 alias-mod-signal.py
+```
+
+The script will generate a plot with the x(t) and m(t) signals. This doesn't need further
+input from the user.
+
 
 ## Troubleshooting
 When installing the conda enviroment. The base enviroment might not activate. This can
